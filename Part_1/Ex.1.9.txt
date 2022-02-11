@@ -1,0 +1,4 @@
+First: create file text.log
+
+Command (Windows):
+docker run -v %cd%/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service
