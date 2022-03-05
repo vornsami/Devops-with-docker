@@ -1,0 +1,34 @@
+FROM node:14-slim
+
+ENV SKIP_PREFLIGHT_CHECK=true
+
+ENV RASA_ENDPOINT=http://trollbot-rasa:5005
+
+# Install app dependencies
+
+WORKDIR /app
+COPY . ./
+
+RUN apt-get update || : && apt-get install python -y
+
+# Build frontend
+
+WORKDIR /app/frontend
+RUN npm install \
+  && npm install react-scripts@3.4.1 -g \
+  && npm run build \
+  && cp -r build/ ../backend/build \
+  && rm -r ../frontend
+
+# - Backend
+
+WORKDIR /app/backend
+RUN npm install
+
+# Start app 
+
+WORKDIR /app
+
+EXPOSE 3001
+
+CMD npm run dev --prefix backend

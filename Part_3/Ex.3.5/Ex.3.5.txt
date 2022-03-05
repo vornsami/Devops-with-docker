@@ -1,0 +1,10 @@
+                                  	Backend
+			
+Start:                            	145.57 MB	
+With golang:1.16.14-alpine3.15:  	447.34 MB
+
+
+                                  	Frontend
+
+Start:                            	362.21 MB
+With node:16.14.0-alpine3.15 image:	248.26 MB

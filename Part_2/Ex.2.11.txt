@@ -1,0 +1,1 @@
+Containerised a service that was difficult to get running on Windows, set up all services to be compatible with Docker and set up a docker-compose so all services can be started easily when needed.

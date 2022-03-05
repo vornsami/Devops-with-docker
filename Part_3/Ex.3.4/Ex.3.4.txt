@@ -1,0 +1,12 @@
+                         		Backend
+			
+Start:                    		1.17 GB
+RUN together:             		778.55 MB
+rm go files and curl:     		579.34 MB			
+restructured RUN-commands:		145.57 MB	
+
+
+                             	Frontend
+Start:                       	644.27 MB
+RUN together:                 	641.61 MB
+rm unnecessary files and curl:	362.21 MB

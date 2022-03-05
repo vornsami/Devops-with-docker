@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+    frontend:
+      build: ./example-frontend
+      container_name: frontend
+      ports:
+        - 5000:5000
+
+    backend:
+      build: ./example-backend
+      container_name: backend
+      ports:
+        - 8080:8080
+
+
+# Place in a directory with both frontend and backend as subdirectories (frontend and backend not included)
+# Run first "docker-compose build", then "docker-compose up"

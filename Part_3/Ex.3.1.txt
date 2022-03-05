@@ -1,0 +1,7 @@
+Repository with a heroku pipeline:
+
+https://github.com/vornsami/kuvalauta
+
+In heroku:
+
+https://devops-w-dock.herokuapp.com/
